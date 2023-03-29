@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*FONTES*/
+  --ff-heading: 'Staatliches', 'cursive';
+  --ff-texting: 'Palanquin', sans-serif;
+  /*CORES*/
+  --bg--container: hsla(312, 91%, 96%, 1);
+  --bg-primary: hsla(233, 100%, 97%, 1);
+  --bg-primary1: hsla(0, 0%, 100%, 1);
+  --bg-primary2: hsla(274, 84%, 12%, 1);
+  --bg-primary3: hsla(232, 17%, 35%, 1);
+  --bg-primary4: hsla(275, 18%, 79%, 1);
+  --bg-primary5: hsla(218, 17%, 62%, 1);
+  font-size: 62.5%;
+}
+
+body {
+
+  background: #E5E5E5;
+
+
+
+}
+
+main {
+  max-width: 32.0rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 3.6rem;
+
+}
+
+header {
+
+  max-width: 38.4rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--bg-primary5);
+  height: 27.9rem;
+}
+
+.page {
+  background-color: var(--bg-primary);
+  margin: 0 auto;
+  width: 38.4rem;
+  height: 199.5rem;
+}
+
+h1 {
+  background-color: var(--bg-primary4);
+  padding: 0.8rem 8.7rem 0.8rem 8.7rem;
+
+  color: var(--bg-primary1);
+
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  font-family: var(--ff-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.0rem;
+  line-height: 3.4rem;
+
+
+  letter-spacing: 0.05em;
+
+}
+
+.page1 {
+  width: 13.7rem;
+  height: 13.7rem;
+  margin: 3.2rem 0 3.2rem 0;
+
+}
+
+p {
+  align-items: center;
+  text-align: center;
+  margin: 1.4rem auto;
+  width: 30.5rem;
+  height: 7.5rem;
+  color: var(--bg-primary2);
+  display: flex;
+  font-family: var(--ff-texting);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1.4rem;
+  margin-bottom: 6.3rem;
+}
+
+.card {
+  position: relative;
+ 
+}
+.card img:hover{
+  transform: scale(1.1);
+opacity: 0.4;
+}
+.card img {
+  object-fit: cover;
+  transition: all 200ms;
+
+}
+
+.card h2,h3,h4 {
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+
+  letter-spacing: 0.05em;
+  top: 1.7rem;
+  right: 1.6rem;
+
+}
+
+.card span {
+  color: var(--bg-primary3);
+  background-color: var(--bg--container);
+  border-radius: 2.0rem;
+  padding: 0 2.4rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  font-family: var(--ff-heading);
+  display: inline-flex;
+  align-items: center;
+  
+}
+h3,h2, h4{
+  animation-name:donwtop ;
+  animation-duration: 800ms ;
+  animation-direction: reverse;
+
+}
+.card{
+
+  animation-name: topdown;
+  animation-duration: 700ms;
+  animation-direction: reverse;
+  
+}
+@keyframes topdown{
+  0%{
+    opacity: 300;
+    transform: translateY(-15px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes donwtop{
+  100%{
+    opacity: 0;
+    transform: translateY(-70px);
+
+  }
+  0%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
